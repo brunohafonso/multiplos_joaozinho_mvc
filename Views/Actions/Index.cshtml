@@ -1,0 +1,40 @@
+﻿@model List<string>
+
+@{
+    ViewData["Title"] = "Multiplos";
+    int multiploTres = 0, multiploCinco = 0, multiloTresCinco = 0, outroMultiplo = 0;
+}
+
+<h1 class="text-center">Lista de Multiplos de 3 e 5.</h1>
+<div class="main">
+    @foreach(var numero in Model)
+    {
+        @if(numero == "FIZZ")
+        {
+            multiploTres++;
+            <div class="d-inline p-2 bg-primary text-white multiplo indigo">@numero</div>
+        } 
+        else if(numero == "BUZZ")
+        {
+            multiploCinco++;
+            <div class="d-inline p-2 bg-primary text-white multiplo blue">@numero</div>
+        } 
+        else if(numero == "FIZZBUZZ")
+        {
+            multiloTresCinco++;
+            <div class="d-inline p-2 bg-primary text-white multiplo teal">@numero</div>
+        } 
+        else 
+        {
+            outroMultiplo++;
+            <div class="d-inline p-2 bg-primary text-white multiplo green">@numero</div>
+        }
+    }
+    <ul>
+        <li><span class="green">@outroMultiplo</span> número* (Multiplo de outros números)</li>
+        <li><span class="indigo">@multiploTres</span>FIZZ (Multiplo de 3)</li>
+        <li><span class="blue">@multiploCinco</span>BUZZ (Multiplo de 5)</li>
+        <li><span class="teal">@multiloTresCinco</span>FIZZBUZZ (Multiplo de 3 e 5)</li>
+    </ul>
+</div>
+

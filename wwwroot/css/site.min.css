@@ -1,0 +1,51 @@
+body{padding-top:50px;padding-bottom:20px}.body-content{padding-left:15px;padding-right:15px}.carousel-caption p{font-size:20px;line-height:1.4}.carousel-inner .item img[src$=".svg"]{width:100%}#qrCode{margin:15px}@media screen and (max-width:767px){.carousel-caption{display:none}}
+
+.main {
+    margin-top: 10px;
+    padding: 10px 5px;
+    color: #333;
+    background-color: #fff;
+    overflow: auto;
+    box-shadow: 1px 1px 5px #888;
+    text-align: center;
+}
+
+.multiplo {
+    width: 100px;
+    border: 1px solid gainsboro;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li span {
+    padding: 2px 10px;
+    border: 1px solid gainsboro;
+    color: #fff;
+}
+
+.indigo {
+    background-color: #3F51B5;
+}
+
+.blue {
+    background-color: #2196F3;
+}
+
+.teal {
+    background-color: #009688;
+}
+
+.green {
+    Background-color: #4CAF50;
+}
